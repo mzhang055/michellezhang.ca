@@ -1,0 +1,22 @@
+:root {
+  --dark-navy: #F5F5F5;
+  --light-navy: #F5F5F5;
+  --lightest-navy: #BECAC7;
+  --green-dark-shadow: rgba(2, 12, 27, 0.7);
+  --slate: #0B6A5C;
+  --light-slate: #7DA098;
+  --lightest-slate: #7DA098;
+  --white: #e6f1ff;
+  --green-dark: #0B6A5C;
+  --green-tint: rgba(100, 255, 218, 0.1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensure the gradient covers the full viewport height */
+  width: 100%; /* Ensure the gradient covers the full viewport width */
+  background-image: radial-gradient(rgba(232, 214, 213, 0.53), rgba(243, 238, 227, 1) 50%, rgba(217, 233, 205, 0.35));
+}
+
+

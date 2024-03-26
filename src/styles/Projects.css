@@ -1,0 +1,103 @@
+#projects {
+  margin: auto;
+  padding-top: 100px;
+  max-width: 1000px;
+  min-height: 50vh;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+@media (max-width: 1080px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+  }
+}
+
+.projects-card {
+  position: relative;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  position: relative;
+  width: 100%; 
+  height:100%;
+  min-height: 400px; 
+  min-width: 400px;
+  overflow: hidden; 
+  padding: 2rem 1.75rem;
+  background-color: var(--slate);
+  border-radius: 16px;
+}
+
+.project-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the card space without distorting */
+}
+
+.projects-card:hover {
+  transform: translateY(-7px);
+  background-color: var(--green-dark);
+}
+
+.card-header {
+  margin-top: -20px;
+  display: flex;
+  padding: 1.25em 0 !important;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: none !important;
+  background-color: transparent !important;
+}
+.folder-icon {
+  color: var(--green-bright);
+}
+
+.github-icon {
+  margin-top: 6px;
+}
+.github-icon:hover {
+  color: var(--green-bright);
+}
+
+.open-icon {
+  margin-left: 10px;
+}
+
+.card-title {
+  font-family: "NTR", sans-serif;
+  color: var(--lightest-slate);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-desc {
+  font-family: "NTR", sans-serif;
+  color: var(--slate);
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+
+.card-tech {
+  font-family: "NTR", sans-serif;
+  color: var(--slate);
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  #projects {
+    height: unset;
+    padding-left: unset;
+    padding-right: unset;
+  }
+  .carousel {
+    display: none;
+  }
+}
