@@ -119,12 +119,12 @@ const JobList = () => {
         "Led the team to secure the prestigious Rookie All-Star and Inspiration Awards for innovation and impact."
       ]
     },
-    "Da Vinci Engineering Enrichment Program": {
+    "UofT Engineering Enrichment Program (DEEP)": {
       jobTitle: "Participant @",
       duration: "JULY 2022",
       desc: [
         "Trained a neural network model with 97.4% accuracy to identify handwritten digits using PyTorch.",
-        "Engaged in advanced workshops focused on computer vision, data analytics, and machine learning.",
+        "Engaged in advanced workshops conducted by UofT professors focused on computer vision, data analytics, and machine learning.",
         "Developed a linear regression model for machine learning in Python to predict prices of diamonds using pandas, matplotlib, seaborn, and sklearn libraries."
       ]
     },
