@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Projects.css";
 import FolderOpenRoundedIcon from "@material-ui/icons/FolderOpenRounded";
+import GitHubIcon from "@material-ui/icons/GitHub";
 import FadeInSection from "./FadeInSection";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import ExternalLinks from "./ExternalLinks";
@@ -67,7 +68,7 @@ class Projects extends React.Component {
       }
       
     };
-
+    
     return (
       <div id="projects">
         <div className="section-header">
@@ -76,14 +77,14 @@ class Projects extends React.Component {
         <div className="project-container">
           <ul className="projects-grid">
             {Object.keys(projects).map((key, i) => (
-              <FadeInSection delay={`${i + 1}00ms`}>
+              <FadeInSection delay={`${i + 1}00ms`} key={key}>
                 <li 
                   className="projects-card" 
                   style={{ backgroundImage: `url(${projects[key]["image"]})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                 >
                   <div className="card-content">
                     <div className="card-header">
-                      <FolderOpenRoundedIcon style={{ fontSize: 35 }} />
+                      <FolderOpenRoundedIcon className="folder-icon" />
                       <ExternalLinks
                         githubLink={projects[key]["link"]}
                         openLink={projects[key]["open"]}
@@ -100,6 +101,8 @@ class Projects extends React.Component {
         </div>
       </div>
     );
+
+    
   }
 }
 

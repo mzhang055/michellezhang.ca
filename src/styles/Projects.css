@@ -10,9 +10,10 @@
   grid-template-columns: repeat(2, minmax(300px, 1fr));
   grid-gap: 10px;
 }
+
 @media (max-width: 1080px) {
   .projects-grid {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
 
@@ -21,17 +22,15 @@
   cursor: default;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
-  position: relative;
   width: 100%; 
-  height:100%;
-  min-height: 400px; 
-  min-width: 400px;
+  height: auto; 
   overflow: hidden; 
   padding: 2rem 1.75rem;
   background-color: var(--slate);
   border-radius: 16px;
+  padding-top: 55%
 }
+
 
 .project-image {
   position: absolute;
@@ -39,7 +38,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the card space without distorting */
+  object-fit: cover; 
+  z-index: -1;
 }
 
 .projects-card:hover {
@@ -56,15 +56,20 @@
   border-bottom: none !important;
   background-color: transparent !important;
 }
+
 .folder-icon {
   color: var(--green-bright);
+  margin-top: -250px;
 }
 
 .github-icon {
-  margin-top: 6px;
+  font-size: 1rem; 
+  color: var(  --lightest-navy);
+  margin-top: -250px;
 }
+
 .github-icon:hover {
-  color: var(--green-bright);
+  color: var(--lightest-navy);
 }
 
 .open-icon {
