@@ -20,7 +20,7 @@ class About extends React.Component {
     const one = (
       <p>
         Hey! I am currently a 
-        <b>Computer Science student @ UofT</b>. 
+        <b> Computer Science student @ UofT</b>. 
         I'm passionate about software development, robotics, and product design!
       </p>
     );
