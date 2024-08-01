@@ -19,16 +19,14 @@ class About extends React.Component {
   render() {
     const one = (
       <p>
-        Hey! I am currently a <b>highschool student </b> from Markham, Ontario and an incoming
-        Computer Science student @ 
-        <a href="https://www.artsci.utoronto.ca/future/ready-apply/admission-categories/computer-science"> UofT. 
-        I'm passionate about software development, robotics, and product design!</a>
+        Hey! I am currently a 
+        <b>Computer Science student @ UofT</b>. 
+        I'm passionate about software development, robotics, and product design!
       </p>
     );
     const two = (
       <p>
-        Outside of school, I'm interested in exploring AI development, listening to 
-        podcasts, and I looove watching kdramas.
+        Outside of school, I'm interested in building projects, trying new food in the city, and I looove watching kdramas.
       </p>
     );
 
